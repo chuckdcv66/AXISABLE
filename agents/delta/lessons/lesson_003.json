@@ -1,0 +1,16 @@
+{
+  "title": "How to Scam the Scammers (Ethically)",
+  "objectives": [
+    "Write a script that auto-deletes toxic DMs (real Lua code for Roblox)",
+    "Design a ‘fake’ rare item to track who tries to scam you (honeypot trap)",
+    "Simulate ‘Adopt Me’ pet supply/demand in Excel (why do neon unicorns cost 1000 Robux?)"
+  ],
+  "methodology": {
+    "case_study": "How *Brookhaven* became #1 by exploiting FOMO",
+    "interactive": "Sell a ‘terrible’ item to classmates using Jedi mind tricks"
+  },
+  "validation": {
+    "metrics": ["Scams prevented", "Social engineering creativity"],
+    "benchmark": "Trick one friend into ‘overpaying’ for a pixel rock"
+  }
+}

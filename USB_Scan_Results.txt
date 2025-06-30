@@ -1,0 +1,942 @@
+Bootable USB Security Scan Results
+==================================================
+Scanned 80 files with potential issues
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\code_scanner_fixer.py
+--------------------------------------------------
+Line 12: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: 'pattern': r'["\']/usr/|["\']/etc/|["\']/boot/|["\']/dev/|C:\\|D:\\',
+
+Line 150: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: folder_path = r"C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT"
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\distro\distro.py
+--------------------------------------------------
+Line 76: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: _UNIXUSRLIBDIR = os.environ.get("UNIXUSRLIBDIR", "/usr/lib")
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_internal\locations\_distutils.py
+--------------------------------------------------
+Line 163: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: return "/usr/local/bin"
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_internal\locations\_sysconfig.py
+--------------------------------------------------
+Line 205: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: return "/usr/local/bin"
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_internal\locations\__init__.py
+--------------------------------------------------
+Line 407: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: if value == "/usr/lib/python3/dist-packages":
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_internal\utils\logging.py
+--------------------------------------------------
+Line 272: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: additional_log_file = "/dev/null"
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_internal\utils\setuptools_build.py
+--------------------------------------------------
+Line 7: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # Windows are correctly handled (it should be "C:\\Users" not "C:\Users").
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_internal\vcs\git.py
+--------------------------------------------------
+Line 49: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # like 'C:/foo/bar' or 'C:\foo\bar'.
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_vendor\distlib\scripts.py
+--------------------------------------------------
+Line 75: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # instead of "/usr/bin/env /dir with spaces/bin/jython"
+
+Line 77: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: if executable.startswith('/usr/bin/env '):
+
+Line 145: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: return '/usr/bin/env %s' % executable
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_vendor\distro\distro.py
+--------------------------------------------------
+Line 76: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: _UNIXUSRLIBDIR = os.environ.get("UNIXUSRLIBDIR", "/usr/lib")
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_vendor\pkg_resources\__init__.py
+--------------------------------------------------
+Line 1786: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: >>> vrp(r'C:\\foo/bar.txt')
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_vendor\platformdirs\unix.py
+--------------------------------------------------
+Line 54: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: path = f"/usr/local/share{os.pathsep}/usr/share"
+
+Line 85: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: path = "/etc/xdg"
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_vendor\platformdirs\windows.py
+--------------------------------------------------
+Line 55: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: """:return: data directory shared by users, e.g. ``C:\\ProgramData\\$appauthor\\$appname``"""
+
+Line 80: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: """:return: cache directory shared by users, e.g. ``C:\\ProgramData\\$appauthor\\$appname\\Cache\\$version``"""
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_vendor\pygments\util.py
+--------------------------------------------------
+Line 158: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: >>> shebang_matches('#!C:\\Python2.4\\Python.exe', r'python(2\.\d)?')
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_vendor\requests\utils.py
+--------------------------------------------------
+Line 454: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # uploading files with "C:\foo\bar.txt" as filename
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_vendor\truststore\_openssl.py
+--------------------------------------------------
+Line 10: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "/etc/ssl/cert.pem",
+
+Line 12: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "/etc/pki/tls/cert.pem",
+
+Line 14: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "/etc/ssl/certs/ca-certificates.crt",
+
+Line 16: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "/etc/ssl/ca-bundle.pem",
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_vendor\urllib3\packages\backports\makefile.py
+--------------------------------------------------
+Line 1: [Missing shebang]
+  Description: Script may lack proper shebang line
+  Code: # -*- coding: utf-8 -*-
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pip\_vendor\urllib3\packages\backports\__pycache__\makefile.cpython-310.pyc
+--------------------------------------------------
+Line 1: [Missing shebang]
+  Description: Script may lack proper shebang line
+  Code: o
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pkg_resources\__init__.py
+--------------------------------------------------
+Line 1536: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: >>> vrp(r'C:\\foo/bar.txt')
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\pkg_resources\_vendor\appdirs.py
+--------------------------------------------------
+Line 69: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP (not roaming):   C:\Documents and Settings\<username>\Application Data\<AppAuthor>\<AppName>
+
+Line 70: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP (roaming):       C:\Documents and Settings\<username>\Local Settings\Application Data\<AppAuthor>\<AppName>
+
+Line 71: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win 7  (not roaming):   C:\Users\<username>\AppData\Local\<AppAuthor>\<AppName>
+
+Line 72: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win 7  (roaming):       C:\Users\<username>\AppData\Roaming\<AppAuthor>\<AppName>
+
+Line 117: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: returned, or '/usr/local/share/<AppName>',
+
+Line 123: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP:     C:\Documents and Settings\All Users\Application Data\<AppAuthor>\<AppName>
+
+Line 124: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Vista:      (Fail! "C:\ProgramData" is a hidden *system* directory on Vista.)
+
+Line 125: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win 7:      C:\ProgramData\<AppAuthor>\<AppName>   # Hidden, but writeable on Win 7.
+
+Line 148: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: os.pathsep.join(['/usr/local/share', '/usr/share']))
+
+Line 223: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: returned, or '/etc/xdg/<AppName>', if XDG_CONFIG_DIRS is not set
+
+Line 230: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Vista:      (Fail! "C:\ProgramData" is a hidden *system* directory on Vista.)
+
+Line 243: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: path = os.getenv('XDG_CONFIG_DIRS', '/etc/xdg')
+
+Line 278: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP:     C:\Documents and Settings\<username>\Local Settings\Application Data\<AppAuthor>\<AppName>\Cache
+
+Line 279: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Vista:      C:\Users\<username>\AppData\Local\<AppAuthor>\<AppName>\Cache
+
+Line 377: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP:     C:\Documents and Settings\<username>\Local Settings\Application Data\<AppAuthor>\<AppName>\Logs
+
+Line 378: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Vista:      C:\Users\<username>\AppData\Local\<AppAuthor>\<AppName>\Logs
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\PyInstaller\__main__.py
+--------------------------------------------------
+Line 294: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # Do not let people run PyInstaller from admin cmd's default working directory (C:\Windows\system32)
+
+Line 278: [Root privileges check]
+  Description: Python script checking for root privileges
+  Code: #   1. Non-root: os.getuid() != 0
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\PyInstaller\building\osx.py
+--------------------------------------------------
+Line 697: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: cmd_args = ['/usr/bin/codesign', '--verify', '--all-architectures', '--deep', '--strict', bundle_dir]
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\PyInstaller\building\utils.py
+--------------------------------------------------
+Line 646: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: if not src.startswith('/lib') and not src.startswith('/usr/lib'):
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\PyInstaller\depend\bindepend.py
+--------------------------------------------------
+Line 732: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: paths = ['/lib', '/usr/lib']
+
+Line 735: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: paths.extend(['/lib32', '/usr/lib32'])
+
+Line 737: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: paths.extend(['/lib64', '/usr/lib64'])
+
+Line 741: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: paths.extend(['/usr/lib/i386-linux-gnu'])
+
+Line 743: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: paths.extend(['/usr/lib/x86_64-linux-gnu'])
+
+Line 751: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: paths.append(os.path.join('/usr/lib', arch_subdir))
+
+Line 763: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: paths.append('/usr/local/lib/hpux32')
+
+Line 765: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: paths.append('/usr/local/lib/hpux64')
+
+Line 767: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: paths.append('/usr/local/lib')
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\PyInstaller\depend\dylib.py
+--------------------------------------------------
+Line 335: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # from the C:\Windows\system32 directory that might end up collected due to ``_win_includes`` list; a prominent
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\PyInstaller\depend\utils.py
+--------------------------------------------------
+Line 173: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: [(libgs.so', ''/usr/lib/libgs.so', 'BINARY')]
+
+Line 279: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: ldconfig = shutil.which('ldconfig', path='/usr/sbin:/sbin:/usr/bin:/bin')
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\PyInstaller\hooks\hook-gi.repository.Gio.py
+--------------------------------------------------
+Line 55: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: _mime_searchdirs = ['/usr/local/share', '/usr/share']
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\PyInstaller\utils\conftest.py
+--------------------------------------------------
+Line 321: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # Minimum Windows PATH is in most cases:   C:\Windows\system32;C:\Windows
+
+Line 325: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: prog_env['PATH'] = os.pathsep.join(['/usr/local/bin', '/usr/bin'])
+
+Line 331: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: prog_env['PATH'] = os.pathsep.join(['/usr/bin', '/bin', '/usr/sbin', '/sbin'])
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\PyInstaller\utils\osx.py
+--------------------------------------------------
+Line 407: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: cmd_args = ['/usr/bin/codesign', '--remove', '--all-architectures', filename]
+
+Line 430: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: '/usr/bin/codesign', '-s', identity, '--force', '--all-architectures', '--timestamp', *extra_args, filename
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\PyInstaller\utils\win32\winutils.py
+--------------------------------------------------
+Line 20: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Return the Windows directory, e.g., C:\\Windows.
+
+Line 33: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # Ensure C:\Windows\system32  and C:\Windows directories are always present in PATH variable.
+
+Line 34: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # C:\Windows\system32 is valid even for 64-bit Windows. Access do DLLs are transparently redirected to
+
+Line 35: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # C:\Windows\syswow64 for 64bit applactions.
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\PyQt5\Qt5\bin\qt.conf
+--------------------------------------------------
+Line 2: [Uncommented important directive]
+  Description: Configuration line without explanatory comment
+  Code: Prefix = ..
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\setuptools\msvc.py
+--------------------------------------------------
+Line 753: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "C:\ProgramData\Microsoft\VisualStudio\Packages\_Instances".
+
+Line 762: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: r'C:\ProgramData\Microsoft\VisualStudio\Packages\_Instances'
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\setuptools\_distutils\unixccompiler.py
+--------------------------------------------------
+Line 48: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: >>> _split_env(['/usr/bin/env', 'A=3', 'gcc'])
+
+Line 49: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: (['/usr/bin/env', 'A=3'], ['gcc'])
+
+Line 360: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: or (dir.startswith('/usr/') and not dir.startswith('/usr/local/'))
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\_pyinstaller_hooks_contrib\pre_safe_import_module\hook-win32com.py
+--------------------------------------------------
+Line 18: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: ['win32com', 'C:\\Python27\\Lib\\site-packages\\win32comext']
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\_pyinstaller_hooks_contrib\stdhooks\hook-cryptography.py
+--------------------------------------------------
+Line 126: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: ossl_modules_dir = pathlib.Path('/usr/lib/ossl-modules')
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\Lib\site-packages\_pyinstaller_hooks_contrib\stdhooks\hook-weasyprint.py
+--------------------------------------------------
+Line 71: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: fontconfig_config_dir = Path('/etc/fonts')
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_internal\locations\_distutils.py
+--------------------------------------------------
+Line 163: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: return "/usr/local/bin"
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_internal\locations\_sysconfig.py
+--------------------------------------------------
+Line 205: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: return "/usr/local/bin"
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_internal\locations\__init__.py
+--------------------------------------------------
+Line 407: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: if value == "/usr/lib/python3/dist-packages":
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_internal\utils\logging.py
+--------------------------------------------------
+Line 272: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: additional_log_file = "/dev/null"
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_internal\utils\setuptools_build.py
+--------------------------------------------------
+Line 7: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # Windows are correctly handled (it should be "C:\\Users" not "C:\Users").
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_internal\vcs\git.py
+--------------------------------------------------
+Line 49: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # like 'C:/foo/bar' or 'C:\foo\bar'.
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_vendor\distlib\scripts.py
+--------------------------------------------------
+Line 75: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # instead of "/usr/bin/env /dir with spaces/bin/jython"
+
+Line 77: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: if executable.startswith('/usr/bin/env '):
+
+Line 145: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: return '/usr/bin/env %s' % executable
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_vendor\distro\distro.py
+--------------------------------------------------
+Line 76: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: _UNIXUSRLIBDIR = os.environ.get("UNIXUSRLIBDIR", "/usr/lib")
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_vendor\pkg_resources\__init__.py
+--------------------------------------------------
+Line 1786: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: >>> vrp(r'C:\\foo/bar.txt')
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_vendor\platformdirs\unix.py
+--------------------------------------------------
+Line 54: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: path = f"/usr/local/share{os.pathsep}/usr/share"
+
+Line 85: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: path = "/etc/xdg"
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_vendor\platformdirs\windows.py
+--------------------------------------------------
+Line 55: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: """:return: data directory shared by users, e.g. ``C:\\ProgramData\\$appauthor\\$appname``"""
+
+Line 80: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: """:return: cache directory shared by users, e.g. ``C:\\ProgramData\\$appauthor\\$appname\\Cache\\$version``"""
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_vendor\pygments\util.py
+--------------------------------------------------
+Line 158: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: >>> shebang_matches('#!C:\\Python2.4\\Python.exe', r'python(2\.\d)?')
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_vendor\requests\utils.py
+--------------------------------------------------
+Line 454: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # uploading files with "C:\foo\bar.txt" as filename
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_vendor\truststore\_openssl.py
+--------------------------------------------------
+Line 10: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "/etc/ssl/cert.pem",
+
+Line 12: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "/etc/pki/tls/cert.pem",
+
+Line 14: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "/etc/ssl/certs/ca-certificates.crt",
+
+Line 16: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "/etc/ssl/ca-bundle.pem",
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_vendor\urllib3\packages\backports\makefile.py
+--------------------------------------------------
+Line 1: [Missing shebang]
+  Description: Script may lack proper shebang line
+  Code: # -*- coding: utf-8 -*-
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip\_vendor\urllib3\packages\backports\__pycache__\makefile.cpython-310.pyc
+--------------------------------------------------
+Line 25: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: selfr   	bufferingencodingerrors newline writing readingbinary rawmoderawbuffertext r   C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pip/_vendor/urllib3/packages/backports/makefile.pybackport_makefile
+
+Line 1: [Missing shebang]
+  Description: Script may lack proper shebang line
+  Code: o
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pkg_resources\__init__.py
+--------------------------------------------------
+Line 1536: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: >>> vrp(r'C:\\foo/bar.txt')
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\pkg_resources\_vendor\appdirs.py
+--------------------------------------------------
+Line 69: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP (not roaming):   C:\Documents and Settings\<username>\Application Data\<AppAuthor>\<AppName>
+
+Line 70: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP (roaming):       C:\Documents and Settings\<username>\Local Settings\Application Data\<AppAuthor>\<AppName>
+
+Line 71: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win 7  (not roaming):   C:\Users\<username>\AppData\Local\<AppAuthor>\<AppName>
+
+Line 72: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win 7  (roaming):       C:\Users\<username>\AppData\Roaming\<AppAuthor>\<AppName>
+
+Line 117: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: returned, or '/usr/local/share/<AppName>',
+
+Line 123: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP:     C:\Documents and Settings\All Users\Application Data\<AppAuthor>\<AppName>
+
+Line 124: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Vista:      (Fail! "C:\ProgramData" is a hidden *system* directory on Vista.)
+
+Line 125: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win 7:      C:\ProgramData\<AppAuthor>\<AppName>   # Hidden, but writeable on Win 7.
+
+Line 148: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: os.pathsep.join(['/usr/local/share', '/usr/share']))
+
+Line 223: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: returned, or '/etc/xdg/<AppName>', if XDG_CONFIG_DIRS is not set
+
+Line 230: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Vista:      (Fail! "C:\ProgramData" is a hidden *system* directory on Vista.)
+
+Line 243: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: path = os.getenv('XDG_CONFIG_DIRS', '/etc/xdg')
+
+Line 278: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP:     C:\Documents and Settings\<username>\Local Settings\Application Data\<AppAuthor>\<AppName>\Cache
+
+Line 279: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Vista:      C:\Users\<username>\AppData\Local\<AppAuthor>\<AppName>\Cache
+
+Line 377: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP:     C:\Documents and Settings\<username>\Local Settings\Application Data\<AppAuthor>\<AppName>\Logs
+
+Line 378: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Vista:      C:\Users\<username>\AppData\Local\<AppAuthor>\<AppName>\Logs
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\PyQt5\Qt5\bin\qt.conf
+--------------------------------------------------
+Line 2: [Uncommented important directive]
+  Description: Configuration line without explanatory comment
+  Code: Prefix = ..
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\setuptools\msvc.py
+--------------------------------------------------
+Line 753: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "C:\ProgramData\Microsoft\VisualStudio\Packages\_Instances".
+
+Line 762: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: r'C:\ProgramData\Microsoft\VisualStudio\Packages\_Instances'
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Lib\site-packages\setuptools\_distutils\unixccompiler.py
+--------------------------------------------------
+Line 48: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: >>> _split_env(['/usr/bin/env', 'A=3', 'gcc'])
+
+Line 49: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: (['/usr/bin/env', 'A=3'], ['gcc'])
+
+Line 360: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: or (dir.startswith('/usr/') and not dir.startswith('/usr/local/'))
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv\Scripts\activate.bat
+--------------------------------------------------
+Line 11: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: set VIRTUAL_ENV=C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\.venv\venv
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_internal\locations\_distutils.py
+--------------------------------------------------
+Line 163: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: return "/usr/local/bin"
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_internal\locations\_sysconfig.py
+--------------------------------------------------
+Line 205: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: return "/usr/local/bin"
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_internal\locations\__init__.py
+--------------------------------------------------
+Line 407: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: if value == "/usr/lib/python3/dist-packages":
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_internal\utils\logging.py
+--------------------------------------------------
+Line 272: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: additional_log_file = "/dev/null"
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_internal\utils\setuptools_build.py
+--------------------------------------------------
+Line 7: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # Windows are correctly handled (it should be "C:\\Users" not "C:\Users").
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_internal\vcs\git.py
+--------------------------------------------------
+Line 49: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # like 'C:/foo/bar' or 'C:\foo\bar'.
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_vendor\distlib\scripts.py
+--------------------------------------------------
+Line 75: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # instead of "/usr/bin/env /dir with spaces/bin/jython"
+
+Line 77: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: if executable.startswith('/usr/bin/env '):
+
+Line 145: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: return '/usr/bin/env %s' % executable
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_vendor\distro\distro.py
+--------------------------------------------------
+Line 76: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: _UNIXUSRLIBDIR = os.environ.get("UNIXUSRLIBDIR", "/usr/lib")
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_vendor\pkg_resources\__init__.py
+--------------------------------------------------
+Line 1786: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: >>> vrp(r'C:\\foo/bar.txt')
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_vendor\platformdirs\unix.py
+--------------------------------------------------
+Line 54: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: path = f"/usr/local/share{os.pathsep}/usr/share"
+
+Line 85: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: path = "/etc/xdg"
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_vendor\platformdirs\windows.py
+--------------------------------------------------
+Line 55: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: """:return: data directory shared by users, e.g. ``C:\\ProgramData\\$appauthor\\$appname``"""
+
+Line 80: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: """:return: cache directory shared by users, e.g. ``C:\\ProgramData\\$appauthor\\$appname\\Cache\\$version``"""
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_vendor\pygments\util.py
+--------------------------------------------------
+Line 158: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: >>> shebang_matches('#!C:\\Python2.4\\Python.exe', r'python(2\.\d)?')
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_vendor\requests\utils.py
+--------------------------------------------------
+Line 454: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: # uploading files with "C:\foo\bar.txt" as filename
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_vendor\truststore\_openssl.py
+--------------------------------------------------
+Line 10: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "/etc/ssl/cert.pem",
+
+Line 12: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "/etc/pki/tls/cert.pem",
+
+Line 14: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "/etc/ssl/certs/ca-certificates.crt",
+
+Line 16: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "/etc/ssl/ca-bundle.pem",
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_vendor\urllib3\packages\backports\makefile.py
+--------------------------------------------------
+Line 1: [Missing shebang]
+  Description: Script may lack proper shebang line
+  Code: # -*- coding: utf-8 -*-
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip\_vendor\urllib3\packages\backports\__pycache__\makefile.cpython-310.pyc
+--------------------------------------------------
+Line 25: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: selfr   	bufferingencodingerrors newline writing readingbinary rawmoderawbuffertext r   |C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pip/_vendor/urllib3/packages/backports/makefile.pybackport_makefile
+
+Line 1: [Missing shebang]
+  Description: Script may lack proper shebang line
+  Code: o
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pkg_resources\__init__.py
+--------------------------------------------------
+Line 1536: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: >>> vrp(r'C:\\foo/bar.txt')
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\pkg_resources\_vendor\appdirs.py
+--------------------------------------------------
+Line 69: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP (not roaming):   C:\Documents and Settings\<username>\Application Data\<AppAuthor>\<AppName>
+
+Line 70: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP (roaming):       C:\Documents and Settings\<username>\Local Settings\Application Data\<AppAuthor>\<AppName>
+
+Line 71: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win 7  (not roaming):   C:\Users\<username>\AppData\Local\<AppAuthor>\<AppName>
+
+Line 72: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win 7  (roaming):       C:\Users\<username>\AppData\Roaming\<AppAuthor>\<AppName>
+
+Line 117: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: returned, or '/usr/local/share/<AppName>',
+
+Line 123: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP:     C:\Documents and Settings\All Users\Application Data\<AppAuthor>\<AppName>
+
+Line 124: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Vista:      (Fail! "C:\ProgramData" is a hidden *system* directory on Vista.)
+
+Line 125: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win 7:      C:\ProgramData\<AppAuthor>\<AppName>   # Hidden, but writeable on Win 7.
+
+Line 148: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: os.pathsep.join(['/usr/local/share', '/usr/share']))
+
+Line 223: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: returned, or '/etc/xdg/<AppName>', if XDG_CONFIG_DIRS is not set
+
+Line 230: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Vista:      (Fail! "C:\ProgramData" is a hidden *system* directory on Vista.)
+
+Line 243: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: path = os.getenv('XDG_CONFIG_DIRS', '/etc/xdg')
+
+Line 278: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP:     C:\Documents and Settings\<username>\Local Settings\Application Data\<AppAuthor>\<AppName>\Cache
+
+Line 279: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Vista:      C:\Users\<username>\AppData\Local\<AppAuthor>\<AppName>\Cache
+
+Line 377: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Win XP:     C:\Documents and Settings\<username>\Local Settings\Application Data\<AppAuthor>\<AppName>\Logs
+
+Line 378: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: Vista:      C:\Users\<username>\AppData\Local\<AppAuthor>\<AppName>\Logs
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\PyQt5\Qt5\bin\qt.conf
+--------------------------------------------------
+Line 2: [Uncommented important directive]
+  Description: Configuration line without explanatory comment
+  Code: Prefix = ..
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\setuptools\msvc.py
+--------------------------------------------------
+Line 753: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: "C:\ProgramData\Microsoft\VisualStudio\Packages\_Instances".
+
+Line 762: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: r'C:\ProgramData\Microsoft\VisualStudio\Packages\_Instances'
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Lib\site-packages\setuptools\_distutils\unixccompiler.py
+--------------------------------------------------
+Line 48: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: >>> _split_env(['/usr/bin/env', 'A=3', 'gcc'])
+
+Line 49: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: (['/usr/bin/env', 'A=3'], ['gcc'])
+
+Line 360: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: or (dir.startswith('/usr/') and not dir.startswith('/usr/local/'))
+
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv\Scripts\activate.bat
+--------------------------------------------------
+Line 11: [Hardcoded paths]
+  Description: Hardcoded absolute paths may cause issues in different environments
+  Code: set VIRTUAL_ENV=C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\venv
+
+
+Scan completed at: 2025-06-29 17:06:48.768240

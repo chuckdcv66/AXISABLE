@@ -1,0 +1,17 @@
+{
+  "title": "Crack the Algorithm (Like a Roblox Code)",
+  "objectives": [
+    "Reverse-engineer why some TikToks flop (plot views vs. watch time)",
+    "Design a ‘fake’ viral trend using A/B testing (test emoji captions vs. no captions)",
+    "Predict your BFF’s next Roblox outfit using data from their shop history"
+  ],
+  "methodology": {
+    "case_study": "How *Starbucks* hacked teen brains with TikTok drinks",
+    "interactive": "Roleplay as an algorithm—troll your friends by ‘boosting’ their bad posts"
+  },
+  "validation": {
+    "metrics": ["Engagement rate crafted", "Trend predictions correct"],
+    "benchmark": "Make a post with 2x more likes than usual"
+  }
+}
+

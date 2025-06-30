@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+*.jsonl
+
+# Secrets
+.env
+*.key
+*.pem
+
+# Models / AI
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+
+# OS crap
+.DS_Store
+Thumbs.db
+desktop.ini

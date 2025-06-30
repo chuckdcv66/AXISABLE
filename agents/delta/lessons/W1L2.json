@@ -1,0 +1,16 @@
+{
+  "title": "Why Olivia Rodrigo’s Choruses *Feel* Like Roblox Obby Wins",
+  "objectives": [
+    "Map song structures as ‘level designs’ (verse = easy level, chorus = boss fight)",
+    "Auto-generate lyrics using Python + your text messages (real code included)",
+    "Test if sad songs *actually* get more streams (analyze Billboard data)"
+  ],
+  "methodology": {
+    "case_study": "How K-pop producers use math to make addicting hooks",
+    "interactive": "Build a ‘mood mixer’—sliders for BPM, key, lyrics = instant ‘hit’"
+  },
+  "validation": {
+    "metrics": ["Earworm potential", "Data accuracy"],
+    "benchmark": "Create a song snippet classmates can’t stop humming"
+  }
+}

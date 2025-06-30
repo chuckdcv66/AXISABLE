@@ -1,0 +1,5 @@
+[Autorun]
+Label=AXISABLE CELESTIAL
+Icon=CELESTIAL.exe
+Open=start_here.bat
+Action=Launch CELESTIAL AI

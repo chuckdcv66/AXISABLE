@@ -1,0 +1,41 @@
+================================================================================
+BOOTABLE USB SECURITY SCAN REPORT
+================================================================================
+
+Scan Date: 2025-06-29 17:13:36.695726
+Scanned Directory: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT
+
+Summary:
+- Files scanned: 1
+- Total issues found: 2
+  - High severity: 0
+  - Medium severity: 2
+  - Low severity: 0
+
+Critical Issues (High Severity):
+--------------------------------------------------------------------------------
+
+All Issues:
+--------------------------------------------------------------------------------
+
+File: C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\code_scanner_fixer.py
+  Line 14: [Hardcoded paths] (medium)
+    Hardcoded absolute paths may cause issues in different environments
+    Code: 'pattern': r'["\']/usr/|["\']/etc/|["\']/boot/|["\']/dev/|C:\\|D:\\',
+
+  Line 215: [Hardcoded paths] (medium)
+    Hardcoded absolute paths may cause issues in different environments
+    Code: folder_path = r"C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT"
+
+
+Recommendations:
+--------------------------------------------------------------------------------
+1. Address all HIGH severity issues first as they pose the greatest risk
+2. Replace hardcoded paths with environment variables or configuration options
+3. Review all scripts that modify system files or registry entries
+4. Add proper shebang lines to all executable scripts
+5. Quote all variables in shell scripts to prevent word splitting
+
+================================================================================
+END OF REPORT
+================================================================================

@@ -1,0 +1,5 @@
+BOOT FAILURE: No module named 'core'
+Traceback (most recent call last):
+  File "C:\Users\Chuck\Desktop\AXISABLE_CELESTIAL_USB_BOOT\interface\interface_celestial_unified.py", line 190, in main
+    from core.agent_manager import AgentManager
+ModuleNotFoundError: No module named 'core'

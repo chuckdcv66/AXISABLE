@@ -1,0 +1,16 @@
+{
+  "title": "Predict the Next Big Game (Before It Drops)",
+  "objectives": [
+    "Analyze trending Roblox genres week-by-week (chart obby vs. horror vs. tycoon)",
+    "Use Google Trends to compare search spikes for trending game titles",
+    "Draft a pitch for a ‘next big game’ based on gaps in trend data"
+  ],
+  "methodology": {
+    "case_study": "Why *Doors* blew up while similar games flopped",
+    "interactive": "Shark Tank Pitch: Sell your trend-predicting game idea to classmates"
+  },
+  "validation": {
+    "metrics": ["Trend alignment", "Originality", "Pitch clarity"],
+    "benchmark": "Get at least 2 people to wish-list or ask to play your game idea"
+  }
+}
